@@ -1,0 +1,69 @@
+<html>
+    <head>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+     
+    </head>
+    <body>
+        <div id="s1"></div>
+        <script type="text/babel">
+            var ar = [
+            {
+            "firstname": "praveen",
+            "lastname": "gubbala",
+            "age": 36,
+            "gender": "male",
+           
+            },
+            {
+            "firstname": "srikanth",
+            "lastname": "gubbala",
+            "age": 32,
+            "gender": "male",
+           
+            },
+            {
+            "firstname": "Laxmi",
+            "lastname": "reddy",
+            "age": 21,
+            "gender": "female",
+           
+            },
+            {
+            "firstname": "mounika",
+            "lastname": "mudiraj",
+            "age": 20,
+            "gender": "female",
+           
+            },
+            {
+            "firstname": "nikhil",
+            "lastname": "m",
+            "age": 22,
+            "gender": "male",
+           
+            },
+            {
+            "firstname": "riya",
+            "lastname": "bhadouria",
+            "age": 14,
+            "gender": "female",
+           
+            }
+            ];
+            var x=<div style={{display:"flex",flexWrap:"wrap"}}>{ar.map((a)=>{
+                return <div style={{border:"1px solid",margin:"10px",padding:"10px"}}>
+                        <div  style={a.gender==="male" ?{backgroundColor:"lightblue"}:{backgroundColor:"lightpink"}}>
+                            <h1>Firstname:{a.firstname}</h1>
+                            <h1>Lastname:{a.lastname}</h1>
+                            <h1>Age: {a.age}</h1>
+                            <h1>Gender: {a.gender}</h1>
+                        </div>
+
+            </div>
+        })}</div>
+            ReactDOM.render(x,document.getElementById("s1"))
+        </script>
+    </body>
+</html>

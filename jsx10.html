@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+        <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+        <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    </head>
+    <body>
+        <div id="d1"></div>
+        <script type="text/babel">
+            var c="red"
+            var d="green"
+            var y=12;
+            var z=-1
+           
+            var x=<div>
+                <h1 style={{color:c}}>Lakshmana</h1>
+                <h1 style={{color:d}}>Lakshmana</h1>
+                <h1 style={{backgroundColor:c,color:"white"}}>Lakshmana</h1>
+                <h1 style={{backgroundColor:d,color:"white"}}>Lakshmana</h1>
+                <h1 style={{border:"25px solid"}}>Lakshmana</h1>
+                <h1 style={y%2==0?{color:"green"}:{color:"red"}}>{y}</h1>
+                <h1 style={z%2==0?{color:"green"}:{color:"red"}}>{z}</h1>
+                
+            </div>
+            
+           
+            ReactDOM.render(x,document.getElementById("d1"))
+        </script>
+    </body>
+</html>
